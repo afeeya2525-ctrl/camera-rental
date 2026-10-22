@@ -1,0 +1,153 @@
+/* ================================
+   การตั้งค่าพื้นฐาน
+================================ */
+body { 
+    font-family: sans-serif; 
+    background-color: #f4f6f9; 
+    margin: 0; 
+}
+
+/* คลาสสำหรับจัดกึ่งกลางหน้าจอ (ใช้ในหน้า Login / Register) */
+.auth-body {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh;
+}
+
+/* คลาสสำหรับหน้าหลัก (Index) */
+.main-body {
+    padding: 40px 20px;
+}
+
+/* ================================
+   กล่องเนื้อหา (Cards & Containers)
+================================ */
+.card, .container { 
+    background: white; 
+    padding: 30px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+    width: 100%; 
+    box-sizing: border-box;
+}
+
+.card { 
+    max-width: 400px; /* ขนาดกล่องสำหรับ Login / Register */
+} 
+
+.container { 
+    max-width: 600px; 
+    margin: 0 auto; /* ขนาดกล่องสำหรับหน้า Index */
+}
+
+/* ================================
+   ฟอร์ม (Forms)
+================================ */
+.form-group { margin-bottom: 15px; }
+label { display: block; margin-bottom: 5px; font-weight: bold; }
+
+input[type="text"], 
+input[type="password"], 
+input[type="date"], 
+select, 
+textarea { 
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    box-sizing: border-box; 
+}
+
+.checkbox-group { display: flex; gap: 15px; margin-top: 5px; }
+
+/* ================================
+   ปุ่มกด (Buttons)
+================================ */
+button { 
+    width: 100%; 
+    padding: 12px; 
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    margin-top: 10px;
+}
+button:hover { background-color: #0056b3; }
+
+.btn-success { background-color: #28a745; }
+.btn-success:hover { background-color: #218838; }
+
+p { text-align: center; margin-top: 15px; }
+
+/* ================================
+   ส่วนหัวและปุ่มออกจากระบบ (Header & Logout)
+================================ */
+.user-header { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    border-bottom: 2px solid #eee; 
+    padding-bottom: 10px; 
+    margin-bottom: 20px; 
+}
+
+.btn-logout { 
+    background-color: #dc3545; 
+    color: white; 
+    padding: 6px 12px; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    font-size: 14px; 
+}
+.btn-logout:hover { background-color: #c82333; }
+/* การตกแต่งส่วนของธีม Chubby Lens */
+body {
+    background-color: #fcf8f9;
+    font-family: 'Kanit', sans-serif;
+    color: #4A4A4A;
+}
+
+.text-pink {
+    color: #ff6b8b;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, #ffe6eb 0%, #fff0f3 100%);
+    border-bottom: 2px solid #f8d7da;
+}
+
+.badge-pink {
+    background-color: #ff6b8b;
+    color: white;
+}
+
+.badge-pink-light {
+    background-color: #ffe0e6;
+    color: #d63384;
+}
+
+.card-custom {
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.price-box {
+    background-color: #fff0f3;
+    border: 2px dashed #ff6b8b;
+    border-radius: 12px;
+}
+
+/* ให้กล่อง Form สวยงามขึ้น */
+.form-control:focus, .form-select:focus {
+    border-color: #ff6b8b;
+    box-shadow: 0 0 0 0.25rem rgba(255, 107, 139, 0.25);
+}
+
+.form-check-input:checked {
+    background-color: #ff6b8b;
+    border-color: #ff6b8b;
+}
